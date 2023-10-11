@@ -50,8 +50,8 @@ function randomChoice(tab) {
 
 function randomStat() {
     let luckDie = Math.random()
-    let luckHit = Math.random() * (1-luckDie)
-    let luckDieAndHit = 1 - luckDie - luckHit
+    let luckHit = Math.random()
+    let luckDieAndHit = Math.random()
     let luckStat = [
         luckDie,
         luckHit,
