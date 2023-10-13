@@ -107,18 +107,18 @@ function kill(){
         while(attackTeam.playerAlive>  0 && defenseTeam.playerAlive > 0){
             if(inGame.spikePlanted == true){
                 if(Math.random()<0.7){
-                    console.log(attackTeam.characters[randomPlayerAttack-1].perso + " a tué "+ defenseTeam.characters[randomPlayerDefense-1].perso)
-                    defenseTeam.characters.splice(randomPlayerDefense-1, 1)
+                    console.log(attackTeam.characters[randomPlayerAttack].perso + " a tué "+ defenseTeam.characters[randomPlayerDefense-1].perso)
+                    defenseTeam.characters.splice(randomPlayerDefense, 1)
                     defenseTeam.playerAlive--
                 }else{
-                    console.log(defenseTeam.characters[randomPlayerDefense-1].perso + " a tué "+ attackTeam.characters[randomPlayer-1].perso)
-                    attackTeam.characters.splice(randomPlayerAttack-1, 1)
+                    console.log(defenseTeam.characters[randomPlayerDefense].perso + " a tué "+ attackTeam.characters[randomPlayer].perso)
+                    attackTeam.characters.splice(randomPlayerAttack, 1)
                     attackTeam.playerAlive--
                 }
             }else {
                 if(Math.random()< 0.5){
-                    console.log(attackTeam.characters[randomPlayerAttack].perso + " a tué "+ defenseTeam.characters[randomPlayerDefense-1].perso)
-                    defenseTeam.characters.splice(randomPlayerDefense-1, 1)
+                    console.log(attackTeam.characters[randomPlayerAttack].perso + " a tué "+ defenseTeam.characters[randomPlayerDefense].perso)
+                    defenseTeam.characters.splice(randomPlayerDefense, 1)
                     defenseTeam.playerAlive--
                 }else{
                     console.log(defenseTeam.characters[randomPlayerDefense].perso + " a tué "+ attackTeam.characters[randomPlayerAttack].perso)
